@@ -1,0 +1,218 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*----------------------------GENERAL--------------------------------*/
+
+*
+{
+    font-family:  'Montserrat', sans-serif;
+    font-weight: 100;
+    letter-spacing: 1px;
+}
+
+a
+{
+    text-decoration: none;
+    color: #000000;
+}
+
+ul
+{
+    list-style: none;
+    list-style-position: outside;
+}
+
+body
+{
+    display: flex;
+    justify-content: center;
+}
+
+
+/*----------------------------CONTAINER--------------------------------*/
+
+.container
+{
+    /*flex: 0 1 950px;*/
+    width: 950px;
+    display: flex;
+    flex-flow: column wrap;
+}
+
+
+
+/*----------------------------HEADER--------------------------------*/
+
+header
+{
+    height: 175px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.liens-h1:hover
+{
+    color: red;
+}
+
+.menu
+{
+    display: flex;
+    flex-flow: row nowrap;
+    width: 275px;
+    justify-content: space-around;
+    font-size: 12px;
+}
+
+#gallery:hover
+{
+    color: red;
+}
+
+.liens-menu
+{
+    color: #AFAFAF;
+}
+
+.liens-menu:hover
+{
+    color: red;
+}
+
+
+
+/*----------------------------MAIN--------------------------------*/
+
+.board
+{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+
+.article
+{
+    color: #000000;
+    padding-bottom: 10px;
+    transition-duration: 200ms;
+    box-shadow: 0px 0px 20px black;
+    height: 300px;
+    /* TODO : gérer les contours de manières à ce qu'il n'empietent pas les uns sur les autres, il faut donner une taille max à l'article */
+}
+
+.article:hover
+{
+    transform: scale(1.02);
+    /* opacity: 0.7; */
+}
+
+.article-img
+/* only use square format */
+{
+    width: 270px;
+}
+
+p
+{
+    text-align: center;
+    font-size: 12px;
+}
+
+
+
+
+/*----------------------------FOOTER--------------------------------*/
+
+.endpage
+{
+    height: 150px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    
+}
+
+.logo
+{
+    width: 20px;
+    padding: 0px 2px;
+    transition-duration: 200ms;
+}
+
+.logo:hover
+{
+    opacity: 0.5;
+}
+
+.signature
+{
+    color: #AFAFAF; 
+}
+
+
+
+
+/*----------------------------MEDIA QUERY--------------------------------*/
+
+@media (max-width: 1000px)
+{
+    .container {width: 650px}
+}
+    
+@media (max-width: 650px)
+{
+    .container {width: 350px}
+    header
+    {
+        flex-flow: column nowrap;
+        justify-content: flex-start;
+    }
+    .menu
+    {
+        flex-flow: column nowrap;
+        align-items: center;
+        padding: 0px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
