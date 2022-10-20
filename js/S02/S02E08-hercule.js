@@ -9,14 +9,14 @@
 //    init..................49             \\
 //    tool..................64             \\
 //    functions.............72             \\
-//    app.init();...........148            \\
+//    app.init();...........135            \\
 //                                         \\
 //                                         \\
 // ======================================= \\
 //                 TODO                    \\
 // ======================================= \\
-//    Refactorisation :                    \\
-//    displayTrends..........107           \\
+//                                         \\
+//                                         \\
 // ======================================= \\
 
 const app = {
@@ -109,28 +109,15 @@ const app = {
         for (const person in base.vote) {
             totalVotes += base.vote[person];
         }
-        // refactorisation
-        let i = 0;
+
         for (const person in base.vote) {
             const percentage = (base.vote[person] / totalVotes * 100).toFixed(0);
-            const block = app.targetPeopleElements[i];
+            const block = document.getElementById(`trends-${person}`);
             const percentageElement = block.querySelector('.people__popularity');
             const barElement = block.querySelector('.people__bar');
             percentageElement.textContent = `${percentage} %`;
             barElement.style.width = `${percentage}%`;
-            i++;
         }
-        // const herculePercentage = (base.vote.hercule / totalVotes * 100).toFixed(0);
-        // const herculePercentageElement =  app.targetTrendsHerculeElement.querySelector('.people__popularity');
-        // const herculeBarElement = app.targetTrendsHerculeElement.querySelector('.people__bar');
-        // herculePercentageElement.textContent = `${herculePercentage} %`;
-        // herculeBarElement.style.width = `${herculePercentage}%`;
-        
-        // const cesarPercentage = (base.vote.cesar / totalVotes * 100).toFixed(0);
-        // const cesarPercentageElement =  app.targetTrendsCesarElement.querySelector('.people__popularity');
-        // const cesarBarElement = app.targetTrendsCesarElement.querySelector('.people__bar');
-        // cesarPercentageElement.textContent = `${cesarPercentage} %`;
-        // cesarBarElement.style.width = `${cesarPercentage}%`;
     },
 
     displayActivities : function () {
