@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap');
+
+:root {
+    --liens-article : #007bff;
+    --liens-article-hover : #0056b3;
+    --fond-header: #f9f9f9;
+    --fond-header-opacity: #f9f9f950;
+    --bordure-article : #eaeaea;
+    --work : #0766F0;
+    --team: #DC5E53;
+    --news: #98DC62;
+    --spacing: 20px;
+}
+
+/* -------------GENERICS---------------- */
+body {
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+
+
+
+/* -------------HEADER---------------- */
+header {
+    background-image: url(../../images/onews/nicole.jpg);
+    background-position: center;
+    background-size: cover;
+    position: fixed;
+    width: 50vw;
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.header__title-container {
+    width: 200px;
+    display: flex ;
+    margin: var(--spacing);
+
+}
+
+.title__title {
+    display: inline;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    vertical-align: top;
+    margin-left: 10px;
+}
+
+.title__image{
+    width: 30px;
+    align-self: baseline;
+}
+
+.header__article {
+    background-color: var(--fond-header-opacity);
+    margin: var(--spacing);
+    padding: var(--spacing);
+    text-align: right;
+    text-shadow: 0 0 15px #000;
+}
+
+h2 {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.header-article__title {
+    margin-bottom: var(--spacing); 
+}
+
+.article__subtitle {
+    font-size:0.5em;
+    font-weight:normal;
+    font-style: italic;
+}
+
+.article__intro {
+    font-size: 0.8em;
+    line-height: 1.3;
+}
+
+.header__footer {
+    text-align: right;
+    margin: var(--spacing);
+    
+
+}
+
+.footer__link {
+    margin: 10px;
+    color: #fff;
+    text-decoration: none;
+    text-shadow: 0 0 15px #000;
+
+}
+
+/* -------------MAIN---------------- */
+main{
+    position: absolute;
+    width: 50vw;
+    height: 100vh;
+    right: 0;
+}
+
+.main__title {
+    background-color:var(--fond-header) ;
+    padding: var(--spacing);
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+
+/* article */
+.article {
+    width: 50%;
+    border: 1px solid var(--bordure-article);
+    padding: var(--spacing);
+    box-sizing: border-box;
+    background-color: #fff;
+}
+
+.article__tag {
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 5px;
+    border-radius: 3px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 10px;
+    margin-bottom: var(--spacing);
+}
+
+.article__tag--news {
+    background-color: var(--news);
+}
+
+.article__tag--team {
+    background-color: var(--team);
+}
+
+.article__tag--work {
+
+    background-color: var(--work);
+}
+
+
+
+.article__title {
+    font-weight: bold;
+    font-size: 1.3em;
+    line-height: 1.2;
+    margin-bottom: var(--spacing);
+}
+
+.article__author{
+    font-size: 0.8em;
+    display: flex;
+    align-items: center;
+    margin-bottom: var(--spacing);
+}
+
+.author__image {
+    width: 32px;
+    margin-right: 10px;
+}
+
+.author__name {
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.author__date {
+    color: #aaa;
+}
+
+.article__text {
+    line-height: 1.2;
+    margin-bottom: var(--spacing);
+}
+
+.article__next {
+    color: var(--liens-article);
+    font-weight: bold;
+}
+
+.article__next:hover {
+    color: var(--liens-article-hover);
+}
+

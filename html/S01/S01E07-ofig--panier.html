@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Figurines</title>
+
+		<!-- CSS -->
+		<link rel="stylesheet" href="../../css/reset.css">
+		<link rel="stylesheet" href="../../css/S01/S01E07-ofig-panier.css">
+		<!-- Fonts -->
+		<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+	</head>
+<body>
+    <header class="header">
+        <div class="header__title-container">
+            <h1 class="header__title">oFig</h1>
+            <h2 class="header__subtitle">Figurines et statuettes</h2>
+        </div>
+        <div class="header__theme-container">
+            <h2 class="header__theme-title">
+                Figurines sur le thème de <strong class="header__theme-title-franchise">Final Fantasy</strong>
+            </h2>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <h3>Votre panier</h3>
+        <div class="container-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Figurine</th>
+                        <th>Prix unitaire</th>
+                        <th>Quantité</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Cloud Strife</td>
+                        <td>59 €</td>
+                        <td>
+                            <input type="number" min="0" value="1">
+                            <button type="button" class="delete">supprimer</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Tifa Lockhart</td>
+                        <td>69 €</td>
+                        <td>
+                            <input type="number" min="0" value="1">
+                            <button type="button" class="delete">supprimer</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Barret Wallace</td>
+                        <td>69 €</td>
+                        <td>
+                            <input type="number" min="0" value="1">
+                            <button type="button" class="delete">supprimer</button>
+                        </td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="2"> Total de la commande :</td>
+                        <td class="price">197 €</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+
+
+        <h3>Préférences de livraison</h3>
+        <form>
+            <section class="container-section-form">
+                <div class="form-division">
+                    <fieldset>
+                        <legend>Où souhaitez vous être livré ?</legend>
+                        <div>
+                            <input type="radio" name="adresseCurrent" id="currentAdresse">
+                            <label for="currentAdresse">Mon adresse courante</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="adresseCurrent" id="otherAdresse" checked>
+                            <label for="otherAdresse">Autre adresse</label>
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Options</legend>
+                        <div>
+                            <input type="checkbox" name="options" id="optionsSMS" checked>
+                            <label for="optionsSMS">Suivi de livraison par sms (inclus)</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="options" id="optionsSatifait">
+                            <label for="optionsSatifait">Satisfait ou remboursé (+2 euros)</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="options" id="optionsGarantie">
+                            <label for="optionsGarantie">Garantie 2 ans (+10 euros)</label>
+                        </div>
+                    </fieldset>
+                </div>
+                <div class="form-division">
+                    <fieldset>
+                        <legend>Adresse</legend>
+                        <div class="placeholder-box">
+                            <input type="text" name="rue" id="rue" class="adresseInput placeholder-input" required>
+                            <label for="rue" class="rightLabel">Rue</label>
+                        </div>
+                        <div class="placeholder-box">
+                            <input type="text" name="code-postal" id="code-postal" class="adresseInput placeholder-input" required>
+                            <label for="code-postal" class="rightLabel">Code Postal</label>
+                        </div>
+                        <div class="placeholder-box">
+                            <input type="text" name="ville" id="ville" class="adresseInput placeholder-input" required>
+                            <label for="ville" class="rightLabel">Ville</label>
+                        </div>
+                    </fieldset>
+                    
+                    <fieldset>
+                        <legend>Informations complémentaires</legend>
+                        <div class="placeholder-box">
+                            <textarea name="infos" id="infos" cols="30" rows="4" class="placeholder-input" required></textarea>
+                            <label for="infos" class="rightLabel">interphone, batiment, etc.</label>
+                        </div>
+                    </fieldset>
+                </div>
+            </section>
+
+            <section class="container-section-form">
+                <div class="box">
+                    <span class="box_text">Montant total à régler :</span>
+                    <span class="price">197 €</span>
+                </div>
+            </section>
+
+            <section class="container-section-form">
+                <a href="S01E07-ofig--homepage.html" class="return">Continuer vos achats</a>
+                <button type="submit" class="payement">Valider et payer</button>
+            </section>
+        </form>
+
+    </main>
+
+    <footer class="footer">
+        oFig - toutes les images sont sous copyright SquareEnix
+    </footer>
+    <div class="fixed-sales">soldes</div>
+</body>
+</html>

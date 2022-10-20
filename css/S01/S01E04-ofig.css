@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+:root {
+    --red : #c80000;
+    --dark-grey : #666;
+    --light-grey : #ccc;
+    --black : #000;
+    --white : #fff;
+    --font: 'Raleway', sans-serif;
+}
+
+
+/* -- GENERAL -- */
+body{
+    font-family: var(--font);
+}
+
+/* -- TITLES -- */
+h1 {
+    background-color: var(--red);
+    color: var(--white);
+    font-size: 2em;
+    font-weight: bold;
+    padding: 0.5em;
+}
+
+h1 strong{
+    font-size: 0.3em;
+}
+
+h2 {
+    background-color: var(--dark-grey);
+    color: var(--white);
+    text-align: center;
+    padding: 0.5em;
+}
+
+h2 em {
+    font-size: 1.5em;
+    font-style: italic;
+}
+
+h3 {
+    color: var(--light-grey);
+    border-bottom: 2px solid var(--light-grey);
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 0.8em;
+    margin: 0.5em 0.2rem;
+    padding : 0.2em;
+}
+
+h4 {
+    font-weight: bold;
+    font-size: 1.3em;
+    margin: 0.5em 0.2rem;
+}
+
+
+
+
+/* -- HEADER -- */
+
+
+
+
+
+
+
+/* -- MAIN -- */
+#container {
+    margin: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1em;
+}
+
+/* article */
+article {
+    border: 1px solid var(--light-grey);
+    padding: 0.5em;
+    transition-duration: 200ms;
+}
+
+article:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 15px var(--dark-grey);
+}
+
+article img {
+    width: 100%;
+}
+
+.description {
+    margin: 0 0.2rem 1em;
+    font-size: 0.8em;
+    text-align: justify;
+}
+
+.button {
+    display: flex;
+    background-color: var(--red);
+    color: var(--white);
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    font-size: 0.8em;
+}
+
+.button:hover {
+    background-color: var(--light-grey);
+    color: var(--black);
+}
+
+.prix-barre {
+    text-decoration: line-through;
+    display: inline;
+}
+
+.prix {
+    font-weight: bold;
+    display: inline;
+    font-size: 1.2em;
+}
+
+
+
+
+
+
+
+
+
+/* -- FOOTER -- */
+footer {
+
+    background-color: var(--dark-grey);
+    color: var(--white);
+    text-align: center;
+    padding: 1em;
+}
+
+
+

@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+
+:root {
+    --dark-grey: #d3d3d3;
+    --light-grey: #eeeeee;
+    --color1: #8b0000;
+}
+
+/* -- GENERAL -- */
+body {
+    background-color: var(--dark-grey);
+    font-family: 'Oswald', sans-serif;
+    line-height: 1.2;
+}
+
+.container {
+    background-color: #fff;
+    width: 900px;
+    border: 1px solid black;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+
+
+
+/* -- TITLES -- */
+h1 {
+    text-align: center;
+    font-size: 4em;
+    font-weight: bold;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    padding: 0.2em 0;
+    margin: 0.5em 0;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    margin: 0.5em;
+}
+
+h3 {
+    font-size: 1.5em;
+    text-align: center;
+    margin-top: 1em;
+    font-weight: bold;
+    color: var(--color1);
+}
+
+
+/* -- HEADER -- */
+
+header img {
+    display: block;
+    margin: 0 auto;
+}
+
+.blackSquare {
+    font-size: 0.3em;
+    background-color: #000;
+    color: #fff;
+    padding: 0.5em 1em;
+}
+
+
+/* -- MAIN -- */
+article {
+    width: 75%;
+    margin: 0 auto;
+}
+
+.presentation {
+    background-color: var(--light-grey);
+    padding: 2em 1.5em;
+}
+
+.presentation img {
+    width: 20%;
+    display: block;
+    margin: 0 auto;
+}
+
+strong {
+    font-weight: bold;
+}
+
+article p {
+    padding-top: 1em;
+}
+
+.informations {
+    border-top: 1px solid black;
+    margin-top: 1em;
+    text-align: center;
+    font-style: italic;
+    font-size: 0.8em;
+}
+
+.actorList a {
+    display: block;
+    background-color: var(--light-grey);
+    color: var(--color1);
+    border-radius: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+.actorList a:hover {
+    background-color: var(--color1);
+    color: var(--light-grey);
+}
+
+.news-article {
+    width: 45%;
+    border: 1px solid black;
+    text-align: center;
+    margin: 1em auto;
+    padding: 2em;
+}
+
+.news-article img {
+    width: 100%;
+    transition-duration: 200ms;
+}
+
+.news-article img:hover {
+    transform: scale(1.2);
+}
+
+
+
+
+/* -- FOOTER -- */
+footer {
+    background-color: var(--dark-grey);
+    padding: 2em 0 4em;
+    text-align: center;
+}

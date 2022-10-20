@@ -1,0 +1,158 @@
+:root{
+    --plain : #d2dae2;
+    --empty : #485460;
+    --light : #fbc048;
+    --highlight : #79ea83;
+}
+
+/* ------------ GENERICS ------------ */
+#gameContainer {
+    min-height: 50vh;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1em;
+}
+
+.game {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+table {
+    text-align: center;
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+
+thead {
+    border-bottom: 1px solid black;
+}
+
+th{
+    width: 6rem;
+    font-size: 1rem;
+}
+
+tr {
+    border-bottom: 1px dashed black;
+}
+
+tbody>tr:nth-child(odd){
+    background-color: #ddd;
+}
+
+h2{
+    margin: 0;
+    font-size: 2em;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.start {
+    cursor: pointer;
+    padding: 1em 2em;
+    background-color: #fff;
+    border: 3px solid orange;
+    border-radius: 50px;
+    font-weight: bold;
+    color: orange;
+    font-size: 1.2em;
+    transition-duration: 200ms;
+}
+
+.start:hover {
+    background-color: orange;
+    color: #fff;
+}
+
+.boardResult {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+}
+
+
+/* ------------ Dice Roller ------------ */
+
+.dice {
+    background-image: url('../../images/dice-sprite.png');
+    width: 100px;
+    height: 100px;
+    margin: 1em;
+}
+
+#player {
+    background-color: #f39c12;
+}
+  
+#dealer {
+    background-color: #e67e22;
+}
+
+.boardDiceRoller {
+    width:100%;
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.boardDiceRoller > * {
+    min-width: 100px;
+    text-align: center;
+}
+
+/* ------------ Invader ------------ */
+.cellule {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.row {
+    display: flex;
+}
+
+#palette {
+    height: 75px;
+    /* width: 300px; */
+    background-color: #4945a3;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1em;
+    padding: 0 1em;
+    align-items: center;
+    border-radius: 20px 20px 0 0;
+}
+
+#palette > * {
+    width: 35px;
+    height: 35px;
+    border-radius: 99px;
+    border: 3px solid grey;
+    transition-duration: 200ms;
+    text-align: center;
+}
+
+#palette > *:hover{
+    cursor: pointer;
+    border: 3px solid #fff;
+}
+
+.plain {
+    background-color: var(--plain);
+}
+.empty {
+    background-color: var(--empty);
+}
+.light {
+    background-color: var(--light);
+}
+.highlight {
+    background-color: var(--highlight);
+}

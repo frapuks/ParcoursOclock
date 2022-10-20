@@ -1,0 +1,89 @@
+:root{
+    --police : sans-serif;
+    --backgroundColor : #EEE6D8;
+    --Red : #93441A;
+    --white : #e5e7e6;
+    --color2 : #DAAB3A;
+}
+
+body{
+    background-color: var(--white);
+}
+
+main {
+    padding: 1em;
+    font-family: var(--police);
+    background-color: var(--backgroundColor);
+    max-width: 60em;
+    margin: 0 auto;
+    box-shadow: 0 0 30px #333;
+    transition-duration: 200ms;
+}
+
+main:hover {
+    transform: translate3d(10px, 10px, 0);
+}
+
+h1, h2, h3 {
+    text-align: center;
+}
+
+h1{
+    color: var(--white);
+    background-color: var(--Red);
+    text-transform: uppercase;
+    font-size: 3em;
+    font-weight: bold;
+    border-radius: 25px;
+}
+
+h2 {
+    color: var(--Red);
+    font-weight: bold;
+    font-size: 2em;
+}
+
+h3{
+    font-weight: 100;
+    font-style: italic;
+    text-decoration: underline;
+    font-size: 1.3em;
+}
+
+strong{
+    color: var(--Red);
+    font-weight: bold;
+}
+
+em{
+    font-style: normal;
+    color: var(--Red);
+}
+
+img{
+    display: block;
+    margin: 0 auto;
+    width: 70%;
+}
+
+.paragrapheRed{
+    color: var(--Red);
+}
+
+a{
+    color: blue;
+}
+
+a:hover{
+    font-weight: bold;
+}
+
+.astuce{
+    font-style: italic;
+    color: var(--Red);
+    font-weight: bold;
+    font-size: 0.8em;
+    background-color: var(--color2);
+    text-align: center;
+    padding: 0.5em;
+}

@@ -1,0 +1,51 @@
+main {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+table {
+    text-align: center;
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+
+thead {
+    border-bottom: 1px solid black;
+}
+
+th{
+    width: 6rem;
+    font-size: 1rem;
+}
+
+tr {
+    border-bottom: 1px dashed black;
+}
+
+tbody>tr:nth-child(odd){
+    background-color: #ddd;
+}
+
+h1{
+    font-size: 2em;
+    margin: 0 0 0.5em;
+}
+button {
+    margin-bottom: 2em;
+    cursor: pointer;
+    padding: 1em 2em;
+    background-color: #fff;
+    border: 3px solid orange;
+    border-radius: 50px;
+    font-weight: bold;
+    color: orange;
+    font-size: 1.2em;
+    transition-duration: 200ms;
+}
+button:hover {
+    background-color: orange;
+    color: #fff;
+}
